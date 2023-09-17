@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+
+<body>
+    <div class="divs">
+        <p style="margin-top: 10px; margin-left: 25px; font-size: 24px;">Student Attendence App</p>
+        <div class="anchor">
+            <a href="./adminlogin.html">Admin Login</a>&nbsp; &nbsp;
+        </div>
+    </div>
+    <div class="Signup_container">
+
+        <div class="form-box">
+
+            <div action="">
+                <h1 id="h">SignUp </h1><br>
+                <div class="inputfields">
+                    <div class="f1" id="name">
+                        <input type="text" placeholder="First Name" id="firstname" minlength="3" maxlength="20"
+                            required="required">
+
+                    </div>
+                    <div class="f1" id="name">
+                        <input type="text" placeholder="Last Name" id="lastName" name="lastName" minlength="1"
+                            maxlength="20" required="required">
+
+                    </div>
+
+                    <div class="f1">
+                        <input type="text" placeholder="Email" id="email" required="required">
+                    </div>
+                    <div class="f1">
+                        <input type="password" placeholder="Password" id="password" minlength="8" maxlength="20"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        <span id="tpassword">
+                            <i class="fa fa-eye-slash" aria-hidden="true" id="icon"></i>
+                        </span>
+                    </div>
+                    <div class="f1">
+                        <input type="password" placeholder="Repeat Password" id="repeatpassword" minlength="8"
+                            maxlength="20" autocomplete="off" required="required">
+                    </div>
+
+                </div><br>
+                <div class="btnss">
+
+                    <button id="SignUp">Sign Up</button><br>
+                    <div class="d">
+                        <p>already have an account?</p>&nbsp;
+                        <div>
+                            <button id="gotologin">Login </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./Assets/config.js"></script>
+    <script type="module" src="./Assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+
+</head>
+
+<body>
+    <div class="divs" style="height: 55px;">
+        <p style="margin-top: 10px; margin-left: 20px;">Student Dashboard</p>
+        <div class="buttons">
+            <a id="studentPortal" href="./attendence.html" target="_blank">Mark Attendence</a>&nbsp; &nbsp;
+            &nbsp;
+            <button id="BackToLogin" style="font-size: 16px;">Login</button>&nbsp; &nbsp;
+            <button id="SignOut" style="font-size: 16px;"> Signout</button>&nbsp; &nbsp;
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h1 class="display 5 mb-5">Student Enrollment </h1>
+    </div>
+    <div class="mainContainer">
+        <div id="studentformContainer">
+            <div id="studentform">
+                <div action="" id="std-form" class="row justify-content-center mb-4">
+                    <div class="col-20 col-md-20 mb-3">
+                        <input type=" text" class="form-control" id="stdFname" placeholder="Enter First Name" required>
+                    </div>
+                    <div class="col-20 col-md-20 mb-3">
+                        <input type="text" class="form-control" id="stdLname" placeholder="Enter Last Name" required>
+                    </div>
+                    <div class="col-20 col-md-20 mb-3">
+                        <input type="text" class="form-control" id="stdRoll" placeholder="Enter Roll NO" required>
+                    </div>
+                    <div class="col-20 col-md-20 mb-3">
+                        <div class="div" style="display: flex;">
+                            <input type="number" class="form-control" id="stdNo" placeholder="Contact No" minlength="11"
+                                maxlength="11" required>
+                        </div>
+
+                    </div><br><br>
+                    <div>
+                        <select name="course" id="coursename" class="col-20 col-md-20 mb-3" style="height: 40px;"
+                            required>
+                            <option></option>
+                            <option value="" disabled selected hidden>Enrolled Course Name</option>
+                            <option value="frontend">FrontEnd</option>
+                            <option value="Backend">BackEnd</option>
+                            <option value="Database">AI</option>
+                            <option value="Mobileapp">Mobile App</option>
+
+                        </select>
+                    </div>
+                    <br><br>
+                    <div class="col-10 col-md-8">
+                        <input type="submit" class="btn btn-success add-btn" value="submit" id="stdformbtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./Assets/config.js"></script>
+    <script type="module" src="./Assets/script.js"></script>
+
+</body>
+
+
+</html>

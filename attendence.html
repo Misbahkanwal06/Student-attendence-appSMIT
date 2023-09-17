@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--  -->
+        <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js" defer></script>
+<link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+
+<body>
+
+    <div class="divs" style="height: 50px;">
+        <p style="margin-top: 10px; margin-left: 20px;">Student Attendance Portal</p>
+        <div class="buttons">
+            <button id="BackToLogin" style="font-size: 16px;">Login</button>&nbsp; &nbsp;
+            <button id="SignOut" style="font-size: 16px;"> Signout</button> &nbsp;
+        </div>
+    </div>
+    <div class="text-center">
+        <br>
+        <h1 class="display 5 mb-5 ">Mark Attendence</h1>
+    </div>
+   
+    <div class="attendcontainer">
+        <div id="Attendenceform">
+
+            <div class="contain">
+                <input type="number" id="markrollNo" placeholder="Please Enter Your Roll No.."
+                    class="col-20 col-md-20 mb-3" required><br>
+                <select placeholder="markAttend" id="markAttendence" required>
+                    <option disabled selected value="">Select To Mark Attendance..</option>
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                    <option value="Leave">Leave</option>
+                </select>
+                <br><br>
+                <div class="attendmarkbtn">
+                    <button class="btn btn-danger add-btn" type="submit" id="markedbtn">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="./Assets/config.js"></script>
+    <script type="module" src="./Assets/script.js"></script>
+
+</body>
+
+</html>
